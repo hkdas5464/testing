@@ -5,14 +5,14 @@ import HeroSection from "@/components/ui/HeroSection";
 import Example from "@/components/ui/Header";
 import Footer from "@/components/ui/Footer";
 import Cards from "@/components/ui/Cards";
-
+import ServiceCard from './pages/ServiceCard';
 export default function Home() {
   return (
     <>
     <Example/>
       {/* <FixHomenav /> */}
       <HeroSection/>
-      <DummyContent />
+      
       <h1 className="text-center mt-4">
 
 
@@ -61,28 +61,10 @@ export default function Home() {
           1914 translation by H. Rackham
           "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains."</p>
       </h1>
+      <ServiceCard/>
       <Cards/>
       <Footer/>
     </>
   );
 }
 
-
-const DummyContent = () => {
-  return (
-    <div className="grid grid-cols-1 h-[40rem] w-full bg-white dark:bg-black relative border border-neutral-200 dark:border-white/[0.2] rounded-md">
-      <h2 className="dark:text-white text-neutral-600 text-center text-4xl mt-40 font-bold">
-        We build custom AI solutions for enterprise
-      </h2>
-      <div className="grig grid-col-1 h-[20rem] w-full bg-slate-600 dark:bg-black relative-border border-neutral-100 dark:border-white/[0.2] rounded-md">
-        <p className="dark:text-white text-neutral-200 text-center text-4xl mt-10 font-regular">to boost profits for shareholders & deliver more value for your customers</p></div>
-        <div className="text-center" >
-          <MovingBorderDemo/>
-        </div>
-      <div className="grig grid-col-1 h-[20rem] w-full bg-slate-600 dark:bg-black relative-border border-neutral-100 dark:border-white/[0.2] rounded-md">
-        <p className="dark:text-white text-neutral-200 text-center text-4xl mt-0 font-regular">What can we solve for you with AI today?</p>
-      </div>
-      <div className="inset-0 absolute bg-grid-black/[0.1] dark:bg-grid-white/[0.2]" />
-    </div>
-  );
-};
